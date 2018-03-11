@@ -11,20 +11,17 @@ class Modal extends Component {
     };
   }
   componentWillReceiveProps(nextProps) {
-    this.setState({ show: nextProps.show });
+    this.toggleModalHandler(nextProps.show);
   }
-  hideModalHandler = () => {
-    this.setState({ show: false });
+  toggleModalHandler = (show) => {
+    this.setState({ show });
   }
   render() {
-    if (!this.state.show) {
-      return null;
-    }
     return (
-      <div className="modal">
-        <div className="modal-overlay"></div>
+      <div className={'modal ' + (this.state.show ? 'show' : 'hide')}>
+        <div className="modal-overlay" onClick={this.toggleModalHandler.bind(this, false)}></div>
         <div className="modal-content">
-          <button onClick={this.hideModalHandler}>&times;</button>
+          <button className="modal-close" onClick={this.toggleModalHandler.bind(this, false)}>&times;</button>
           {this.props.children}
         </div>
       </div>
