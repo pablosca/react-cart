@@ -21,8 +21,11 @@ class Modal extends Component {
       <div className={'modal ' + (this.state.show ? 'show' : 'hide')}>
         <div className="modal-overlay" onClick={this.toggleModalHandler.bind(this, false)}></div>
         <div className="modal-content">
+          <div className="modal-title">{this.props.title}</div>
+          <div className="modal-body">
+            {this.props.children}
+          </div>
           <button className="modal-close" onClick={this.toggleModalHandler.bind(this, false)}>&times;</button>
-          {this.props.children}
         </div>
       </div>
     );

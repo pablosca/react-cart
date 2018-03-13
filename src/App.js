@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Modal show={this.state.showCart}>
+        <Modal show={this.state.showCart} title="Your Shopping Cart">
           <Cart />
         </Modal>
         <div className="container">

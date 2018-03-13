@@ -30,7 +30,6 @@ const PRODUCTS_IN_CART = [
 
 const Cart = (props) => (
  <div className="cart">
- 	<h2 className="cart-title">Your Shopping Cart</h2>
  	<div className="cart-table">
  		<div className="cart-row cart-heading">
  			<div className="cart-cell cart-product">Product</div>
