@@ -16,7 +16,9 @@ class App extends Component {
         <Modal show={this.state.showCart}>
           Content for modal.
         </Modal>
-        <button onClick={this.showCartHandler.bind(this)}>View Cart</button>
+        <div className="container">
+          <button className="view-cart-btn" onClick={this.showCartHandler.bind(this)}>View Cart</button>
+        </div>
       </div>
     );
   }
