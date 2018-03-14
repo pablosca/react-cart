@@ -18,14 +18,18 @@ class Modal extends Component {
   }
   render() {
     return (
-      <div className={'modal ' + (this.state.show ? 'show' : 'hide')}>
+      <div role="dialog" aria-labelledby="modal-title" className={'modal ' + (this.state.show ? 'show' : 'hide')}>
         <div className="modal-overlay" onClick={this.toggleModalHandler.bind(this, false)}></div>
         <div className="modal-content">
-          <div className="modal-title">{this.props.title}</div>
+          <div id="modal-title" className="modal-title">{this.props.title}</div>
           <div className="modal-body">
             {this.props.children}
           </div>
-          <button className="modal-close" onClick={this.toggleModalHandler.bind(this, false)}>&times;</button>
+          <button
+            className="modal-close"
+            onClick={this.toggleModalHandler.bind(this, false)}
+            aria-label="Close Modal"
+          >&times;</button>
         </div>
       </div>
     );

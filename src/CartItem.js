@@ -20,9 +20,9 @@ const CartItem = (props) => (
 			</div>
 		</div>
 		<div className="cart-cell cart-quantity">
-			<button className="cart-quantity-btn">&minus;</button>
+			<button className="cart-quantity-btn" aria-label="Substract Quantity">&minus;</button>
 			<input className="cart-quantity-field" type="number" defaultValue="1" />
-			<button className="cart-quantity-btn">+</button>
+			<button className="cart-quantity-btn" aria-label="Add Quantity">+</button>
 		</div>
 		<div className="cart-cell cart-price"><strong>{props.product.price} SEK</strong></div>
 	</div>
