@@ -1,7 +1,9 @@
 @import '~normalize.css/normalize.css';
 body {
 	color: #333;
-	font-family: sans-serif;;
+	font-family: sans-serif;
+	height: 100%;
+	overflow: hidden;
 }
 a {
 	color: #006bee;

@@ -2,6 +2,7 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	padding: 15px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -17,7 +18,6 @@
 
 .modal-title {
     background: #efefef;
-    margin-bottom: 15px;
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
@@ -41,8 +41,11 @@
 
 .modal-content {
 	background: #fff;
+    display: flex;
+    flex-direction: column;
 	position: relative;
 	z-index: 2;
+	max-height: 100%;
 	max-width: 850px;
 	width: 100%;
 	opacity: 0;
@@ -56,6 +59,9 @@
 }
 
 .modal-body {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
 	padding: 15px;
 }
 
