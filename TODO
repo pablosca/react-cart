@@ -1,0 +1,9 @@
+-- TODOS --
+
+- Add behaviour to quantity's '+' and '-' buttons
+- Add behavior to Delete and Edit actions for each item
+- Add focus trap for modal (using something like this: https://github.com/vigetlabs/react-focus-trap)
+- Add more tests (ie: Modal)
+- Refactor html code to use more proper elements such as 'section' or 'article'
+- Review aria attributes
+- Improve item layouts for mobile
