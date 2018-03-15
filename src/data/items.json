@@ -1,0 +1,24 @@
+[
+	{
+		"id": 0,
+		"image": "http://via.placeholder.com/156x156",
+		"brand": "GAP",
+		"name": "Oversize Blazer",
+		"options": {
+			"color": "black",
+			"size": 36
+		},
+		"price": 1750
+	},
+	{
+		"id": 1,
+		"image": "http://via.placeholder.com/156x156",
+		"brand": "Zara",
+		"name": "Classic Jeans",
+		"options": {
+			"color": "green",
+			"size": 34
+		},
+		"price": 2000
+	}
+]

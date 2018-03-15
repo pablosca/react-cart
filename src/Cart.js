@@ -3,30 +3,7 @@ import React from 'react';
 import CartItem from './CartItem';
 import './Cart.css';
 
-const PRODUCTS_IN_CART = [
-	{
-		id: 0,
-		image: 'http://via.placeholder.com/156x156',
-		brand: 'GAP',
-		name: 'Oversize Blazer',
-		options: {
-			color: 'black',
-			size: 36
-		},
-		price: 1750
-	},
-	{
-		id: 1,
-		image: 'http://via.placeholder.com/156x156',
-		brand: 'Zara',
-		name: 'Classic Jeans',
-		options: {
-			color: 'green',
-			size: 34
-		},
-		price: 2000
-	}
-];
+const PRODUCTS_IN_CART = require('./data/items.json');
 
 const Cart = (props) => (
  <div className="cart">
